@@ -1,0 +1,78 @@
+/* ============================================
+   ProductList — 商品列表页样式
+   ============================================ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.main {
+  flex: 1;
+  max-width: var(--page-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+/* --- 面包屑 --- */
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.breadcrumbItem {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-secondary);
+}
+
+.breadcrumbActive {
+  color: var(--color-text-primary);
+}
+
+.breadcrumbArrow {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-secondary);
+}
+
+/* --- 工具栏 --- */
+.toolbar {
+  margin-bottom: 28px;
+}
+
+/* --- 商品网格 --- */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 470px);
+  gap: 20px 16px;
+  padding-bottom: 60px;
+}
+
+/* --- 响应式 --- */
+@media (max-width: 1100px) {
+  .main {
+    padding: 0 24px;
+  }
+
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}

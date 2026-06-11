@@ -1,0 +1,365 @@
+/* ============================================
+   ProductDetail — 商品详情页样式
+   页面尺寸: 1280 × 3693px
+   ============================================ */
+
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 3693px;
+  background: #FFFFFF;
+}
+
+/* --- 主内容区 --- */
+.main {
+  padding: 0 160px;
+}
+
+/* --- 面包屑 --- */
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding-top: 83px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbItem {
+  font-family: 'Alibaba PuHuiTi', var(--font-family-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #888888;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.breadcrumbLink {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbLink:hover {
+  color: var(--color-primary, #FF7E21);
+}
+
+.breadcrumbActive {
+  color: #000000;
+}
+
+.breadcrumbArrow {
+  width: 16px;
+  height: 16px;
+}
+
+/* --- 商品展示区 --- */
+.productArea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 26px;
+  width: 626px;
+  height: 480px;
+  margin-bottom: 25px;
+}
+
+/* 缩略图列表 */
+.thumbnailList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 120px;
+  height: 480px;
+  flex: none;
+}
+
+.thumbnail {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #EBEBEB;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  flex: none;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnailActive {
+  border-color: #FF7E21;
+}
+
+/* 主图 */
+.mainImageWrap {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  flex: none;
+}
+
+.mainImageBg {
+  width: 480px;
+  height: 480px;
+  background: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 275.68px;
+  height: 328.78px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* 左右箭头 */
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: box-shadow 0.2s ease;
+}
+
+.arrowBtn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.arrowLeft {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.arrowRight {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+/* --- 商品信息区 --- */
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 810px;
+  top: 127px;
+  width: 310px;
+}
+
+.productName {
+  width: 310px;
+  font-family: 'Alibaba PuHuiTi', var(--font-family-primary);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #000000;
+}
+
+/* 价格行 */
+.priceRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  width: 310px;
+  height: 87px;
+  background: #FFF0E6;
+  border-radius: 6px;
+}
+
+.priceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.priceValue {
+  font-family: 'Plus Jakarta Sans', var(--font-family-number);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #000000;
+}
+
+.priceBuyback {
+  color: #FF7E21;
+}
+
+.priceLabel {
+  font-family: 'Alibaba PuHuiTi', var(--font-family-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: #888888;
+}
+
+.priceLabelBuyback {
+  color: #FFB076;
+}
+
+.priceDivider {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+/* 规格行 */
+.specRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.specTitle {
+  font-family: 'Plus Jakarta Sans', var(--font-family-number);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 165%;
+  letter-spacing: 0.4px;
+  color: #0F172A;
+}
+
+.specValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 20px;
+  gap: 10px;
+  border: 1px solid #EBEBEB;
+  border-radius: 6px;
+}
+
+.specValue span {
+  font-family: 'Plus Jakarta Sans', var(--font-family-number);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  color: #888888;
+}
+
+/* 操作按钮 */
+.actionRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.actionBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 145px;
+  height: 40px;
+  background: #FF7E21;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Alibaba PuHuiTi', var(--font-family-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 208%;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease;
+}
+
+.actionBtn:hover {
+  background: #E56A1A;
+}
+
+/* --- 商品详情图 --- */
+.detailSection {
+  width: 636px;
+  margin-top: 25px;
+  margin-left: 0;
+}
+
+.detailImage {
+  width: 636px;
+  display: block;
+  object-fit: contain;
+}
+
+/* --- 数量选择（默认隐藏） --- */
+.quantityRow {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantityTitle {
+  font-family: 'Plus Jakarta Sans', var(--font-family-number);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+  letter-spacing: 0.4px;
+  color: #0F172A;
+}
+
+.quantityControl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantityBtn {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.15s ease;
+}
+
+.quantityBtn:hover {
+  background: #F5F5F5;
+}
+
+.quantityValue {
+  width: 24px;
+  height: 24px;
+  font-family: 'Plus Jakarta Sans', var(--font-family-number);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+}

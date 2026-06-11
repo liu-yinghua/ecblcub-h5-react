@@ -1,0 +1,62 @@
+/* ============================================
+   Design Tokens — ECBclub 设计系统
+   ============================================ */
+
+:root {
+  /* --- 品牌色 --- */
+  --color-primary: #FF7E21;
+  --color-primary-hover: #e66d10;
+  --color-primary-light: #FFF0E6;
+  --color-primary-text: #FFB076;
+
+  /* --- 中性色 --- */
+  --color-bg-page: #FFFFFF;
+  --color-bg-section: #F6F6F6;
+  --color-bg-image: #F1F1F1;
+  --color-bg-image-alt: #E2E2E0;
+
+  /* --- 边框 --- */
+  --color-border: #EBEBEB;
+  --color-border-header: #E6E7EB;
+  --color-border-footer: #E3E3E3;
+
+  /* --- 文字 --- */
+  --color-text-primary: #000000;
+  --color-text-secondary: #888888;
+  --color-text-white: #FFFFFF;
+
+  /* --- 圆角 --- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+
+  /* --- 间距 --- */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  /* --- 字体 --- */
+  --font-family-primary: 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-family-number: 'Plus Jakarta Sans', sans-serif;
+
+  /* --- 字体大小 --- */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+
+  /* --- 行高 --- */
+  --line-height-tight: 125%;
+  --line-height-normal: 165%;
+  --line-height-loose: 170%;
+  --line-height-button: 208%;
+
+  /* --- 阴影 --- */
+  --shadow-header: drop-shadow(0px 1px 4px rgba(253, 253, 253, 0.25));
+
+  /* --- 页面尺寸 --- */
+  --page-max-width: 1280px;
+  --page-content-width: 960px;
+}
